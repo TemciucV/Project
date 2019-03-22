@@ -8,11 +8,12 @@
 </head>
 <body>
 
-<center><h1>Login page</h1></center>
+<center><h1>Login</h1></center>
 
 <hr>
 
 <section>
+<div class="login">
 <form method="POST" action="login.php">
 	Login: <br>
 	<input type="text" name="login"><br>
@@ -20,20 +21,9 @@
 	<input type="password" name="password"> <br> <br>
 	<input type="submit" value="submit">
 </form>
-
+</div>
 </section>
-
-
-
-
-
-
-
-<!-- <footer>
-	
-	Soft Tehnica
-</footer> -->
-
 </body>
 
+<?php include 'footer.php' ?>
 </html>

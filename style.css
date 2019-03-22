@@ -1,64 +1,123 @@
 body{
-	background-color: ivory;
-	padding: 15px;
-	margin: 0;
-	text-align: center;
+  background-color: ivory;
 }
 
-h1{
-	align-content: center;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #008000;
 }
 
-main{
-	height: 100%;
-	width: 73%;
-	float: right;
-	background-color: mintcream;
-	margin: 0;
-	text-align: center;
-	font-size: 20px;
+li {
+  float: left;
 }
 
-section{
-	text-align: center;
-}
-
-aside{
-	width: 25%;
-	height: 100%
-	float: left;
-	margin-right: 2%;
-}
-
-
-.vertical-menu{
-	width: 100%;
-	text-decoration: none;
-}
-
-.vertical-menu a {
-  background-color: #eee;
-  color: black;
+li a {
   display: block;
-  padding: 12px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
-.vertical-menu a:hover {
-  background-color: #ccc;
+/*li a:hover:not(.active) {
+  background-color: #111;
+}*/
+
+.active {
+  background-color: #008000;
 }
 
-.vertical-menu a.active {
-  background-color: green ;
-  color: white;
-}
-
-table, th, td {
-  border: 1px solid black;
+footer{
+  height: 7%;
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  /*background-color: red;*/
+  color: black;
   text-align: center;
-  align-content: center;
 }
 
+aside{
+  margin-top: 0;
+  padding: 0;
+  width: 23%;
+  /*height: 100%*/
+  float: left;
+  position: static;
+    height: 54%;
+    margin: 0;
+
+}
+main{
+  background-color: #8FBC8F;
+  width: 80%;
+  
+    position: relative;
+    left: 200px;
+    /*right: 10px;*/
+    height: 54%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.vertical-menu{
+  margin-top: 0;
+  width: 100%;
+  text-decoration: none;
+  list-style-type: none;
+    position: auto;
+    }
+
+    .vertical-menu input {
+      margin-top: 0;
+      padding-top: 0;
+  background-color: #8FBC8F;
+  color: black;
+  /*display: block;*/
+  padding: 15px;
+  text-decoration: none;
+  width: 190px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Times New Roman";
+}
+
+.vertical-menu input:hover {
+  background-color: #FFEFD5;
+
+}
 img{
-	align-content: center;
+  float: right;
+  position: absolute;
+}
+
+table {
+  border-collapse: collapse;
+  /*margin: 0 auto;*/
+  border: 1px solid black;
+  /*text-align: center;
+  align-content: center;*/
+  margin-bottom: 25px;
+}
+
+th, td {
+  border: 1px solid black;
+}
+
+th {
+  padding:  5px 10px;
+}
+
+.login{
+  text-align: center;
+}
+.contactme{
+
 }
