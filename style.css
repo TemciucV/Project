@@ -1,0 +1,123 @@
+body{
+  background-color: ivory;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #008000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*li a:hover:not(.active) {
+  background-color: #111;
+}*/
+
+.active {
+  background-color: #008000;
+}
+
+footer{
+  height: 7%;
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  /*background-color: red;*/
+  color: black;
+  text-align: center;
+}
+
+aside{
+  margin-top: 0;
+  padding: 0;
+  width: 23%;
+  /*height: 100%*/
+  float: left;
+  position: static;
+    height: 54%;
+    margin: 0;
+
+}
+main{
+  background-color: #8FBC8F;
+  width: 80%;
+  
+    position: relative;
+    left: 200px;
+    /*right: 10px;*/
+    height: 54%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.vertical-menu{
+  margin-top: 0;
+  width: 100%;
+  text-decoration: none;
+  list-style-type: none;
+    position: auto;
+    }
+
+    .vertical-menu input {
+      margin-top: 0;
+      padding-top: 0;
+  background-color: #8FBC8F;
+  color: black;
+  /*display: block;*/
+  padding: 15px;
+  text-decoration: none;
+  width: 190px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Times New Roman";
+}
+
+.vertical-menu input:hover {
+  background-color: #FFEFD5;
+
+}
+img{
+  float: right;
+  position: absolute;
+}
+
+table {
+  border-collapse: collapse;
+  /*margin: 0 auto;*/
+  border: 1px solid black;
+  /*text-align: center;
+  align-content: center;*/
+  margin-bottom: 25px;
+}
+
+th, td {
+  border: 1px solid black;
+}
+
+th {
+  padding:  5px 10px;
+}
+
+.login{
+  text-align: center;
+}
+.contactme{
+
+}
