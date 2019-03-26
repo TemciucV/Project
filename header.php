@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> task5 </title>
+	<title> task7 </title>
 	<link rel="stylesheet" href="css/style.css">
 
 	<ul>
   
-  <li style="float: right;"><a class="active" href="login1.php">Logout</a></li>
+ <li style="float: right;"><a class="active" href="logout.php"> Log out</a></li> 
 	</ul>
 
 

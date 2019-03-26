@@ -1,33 +1,27 @@
 <?php require 'connect.php';
 
-// $general = $_POST['general'];
-// $hobbies = $_POST['hobbies'];
-// $grades = $_POST['grades'];
+	$id="";
 
-if (isset($_GET['page'])) {
+if (isset($_GET['id'])) {
     
-    $page_id = 1;
+    $id=$_GET['id'];	
+}
+    	if ($id == null) {
+               $id[0] = "1";
+            }
 
-	if ($_GET['page']=="General") $page_id = 1;
-	if ($_GET['page']=="Hobbies") $page_id = 2;
-	if ($_GET['page']=="Studies")  $page_id = 3;
-	if ($_GET['page']=="Contacts") $page_id = 4;
-	if ($_GET['page']=="Log in") $page_id = 5;
-
-	$sql = "SELECT content FROM pages where id= $page_id";
-   
-    $result = mysqli_query($con,$sql);
+	$sql = "SELECT content FROM pages where id= '$id' ";
+  //echo "<ul>";
 	$result = mysqli_query($con,$sql) or die(mysqli_error($con));
 
 		while ($row = mysqli_fetch_assoc($result)) {
 			echo "<br>";
+			//echo "<li>";
 			echo $row['content'];
+			//echo "</li>";
 			echo "<br>";
 	}
-   
-}
-
-
+	//echo "</ul>";
 
    mysqli_close($con);
  ?>

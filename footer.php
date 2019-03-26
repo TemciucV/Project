@@ -6,7 +6,7 @@
 	<hr>
  &copy; Indrivo 
 		<br>
-		<a href="http://localhost/internship/new/contactme1.php">Contact me </a>
+		<a href="http://localhost/internship/task7/contactme1.php">Contact me </a>
 <br>
 </footer>
 

@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost","root","","task2");
+$con = mysqli_connect("localhost","root","","task1");
 
 if (mysqli_connect_error())
   {

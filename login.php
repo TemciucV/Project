@@ -1,4 +1,6 @@
-<?php include 'connect1.php';
+<?php include 'connect.php';
+
+session_start();
 
 if (isset($_POST['login']) and isset($_POST['password'])){
 	
@@ -17,8 +19,8 @@ if(!$result)
  else{
      if(mysqli_num_rows($result)>0)
      {
-        $_SESSION['login']=$username;
-        header('Location: http://localhost/internship/task7/index.php?page=General');
+        $_SESSION['login']=$login;
+        header('Location: http://localhost/internship/task7/index.php');
      }
     else
     {
